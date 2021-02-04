@@ -1,30 +1,27 @@
 import * as actionTypes from "./actionTypes";
 
-export const addToList = (list, id, checked) => {
+export const handleAddToList = (todo) => {
   return {
     type: actionTypes.ADD_TO_LIST,
-    newItem: list,
-    idEl: id,
-    check: checked,
+    todo: todo,
   };
 };
-
-export const removeFromList = (removeId) => {
-  return {
-    type: actionTypes.REMOVE_FROM_LIST,
-    idElRemove: removeId,
-  };
-};
-
-export const checkFromList = (checkId) => {
+export const handleToggleCheck = (id) => {
   return {
     type: actionTypes.CHECK_FROM_LIST,
-    checkBox: checkId,
+    id: id,
   };
 };
 
-export const deleteCompleted = () => {
+export const handleDeleteTodo = (id) => {
   return {
     type: actionTypes.DELETE_FROM_LIST,
+    id: id,
+  };
+};
+
+export const handleClearCompleted = () => {
+  return {
+    type: actionTypes.CLEAR_COMPLETED,
   };
 };

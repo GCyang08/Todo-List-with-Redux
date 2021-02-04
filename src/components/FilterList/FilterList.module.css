@@ -1,0 +1,36 @@
+.ShadowBox {
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.13);
+}
+.Filter {
+  align-items: center;
+
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+.ItemsLeft {
+  color: gray;
+}
+.Filter span,
+button {
+  font-size: 14px;
+}
+.Wrapper {
+  cursor: pointer;
+}
+.Wrapper span {
+  margin: 5px;
+}
+.FilterButtons {
+  color: hsl(220, 98%, 61%);
+}
+
+@media (min-width: 280px) and (max-width: 800px) {
+  .Filter span,
+  button {
+    font-size: 12px;
+  }
+  .Wrapper span {
+    margin: 3px;
+  }
+}

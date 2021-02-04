@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
+
+.Input {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  margin-bottom: 25px;
+}
+.Input input {
+  border-width: 0;
+  border-radius: 5px;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 20px;
+}
+.Input input:focus {
+  outline: none;
+}

@@ -2,56 +2,48 @@ import * as actionTypes from "../actions/actionTypes";
 import { updatedObject } from "../utility";
 
 const initialState = {
-  list: [
-    { lists: "Complete online JS course", isChecked: true },
-    { lists: "Jog around the park 3x", isChecked: false },
-    { lists: "10 minutes meditation", isChecked: false },
-    { lists: "Read for 1 hour", isChecked: false },
-    { lists: "Pick up groceries", isChecked: false },
-    { lists: "Complete Todo App on Frontend Mentor", isChecked: false },
+  todos: [
+    { id: 0, description: "Complete Course", completed: true },
+    { id: 1, description: "Jog around the park 3x", completed: false },
+    { id: 2, description: "10 minutes meditaion", completed: false },
+    { id: 3, description: "Read for 1 hour", completed: false },
+    { id: 4, description: "Pick up Groceries", completed: false },
+    { id: 5, description: "Complete my Resume", completed: false },
   ],
 };
 
-const addToList = (state, action) => {
-  const userInput = {
-    lists: action.newItem,
-    id: action.idEl,
-    isChecked: action.check,
-  };
-  const copyState = [...state.list];
-  const newState = copyState.concat(userInput);
-  return updatedObject(state, { list: newState });
+const handleAddToList = (state, action) => {
+  return updatedObject(state, { todos: state.todos.concat(action.todo) });
 };
 
-const removeItemFromList = (state, action) => {
-  const updatedList = state.list.filter((list, id) => id !== action.idElRemove);
-  return updatedObject(state, { list: updatedList });
+const handleToggleCheck = (state, action) => {
+  const todo = state.todos.find((todo) => todo.id === +action.id);
+  todo.completed = !todo.completed;
+  return updatedObject(state, { todos: [...state.todos] });
 };
 
-const checkList = (state, action) => {
-  const checkedId = action.checkBox;
-  console.log(checkedId);
-  const listArray = [...state.list];
-  listArray[checkedId].isChecked = !listArray[checkedId].isChecked;
-  return updatedObject(state, { list: listArray });
-};
-
-const deleteFromList = (state) => {
+const handleDeleteTodo = (state, action) => {
   return updatedObject(state, {
-    list: state.list.filter((lists) => !lists.isChecked),
+    todos: state.todos.filter((t) => t.id !== +action.id),
+  });
+};
+
+const handleClearCompleted = (state) => {
+  return updatedObject(state, {
+    todos: state.todos.filter((todo) => todo.completed === false),
   });
 };
 
 const reducer = (state = initialState, action) => {
   switch (action.type) {
     case actionTypes.ADD_TO_LIST:
-      return addToList(state, action);
-    case actionTypes.REMOVE_FROM_LIST:
-      return removeItemFromList(state, action);
+      return handleAddToList(state, action);
     case actionTypes.CHECK_FROM_LIST:
-      return checkList(state, action);
+      return handleToggleCheck(state, action);
     case actionTypes.DELETE_FROM_LIST:
-      return deleteFromList(state, action);
+      return handleDeleteTodo(state, action);
+    case actionTypes.CLEAR_COMPLETED:
+      return handleClearCompleted(state, action);
   }
   return state;
 };

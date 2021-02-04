@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
+
+.TodoList {
+  font-family: "Josefin Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 650px;
+  margin: 75px auto;
+}
+.TodoList h1 {
+  color: white;
+  font-size: 35px;
+}
+.Header {
+  align-items: center;
+  display: flex;
+  margin-bottom: 25px;
+}
+.Header h1 {
+  flex: 1;
+  letter-spacing: 10px;
+}
+.WrapList {
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.13);
+}
+@media (min-width: 280px) and (max-width: 800px) {
+  .TodoList {
+    width: 90%;
+  }
+}

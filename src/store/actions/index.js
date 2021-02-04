@@ -1,6 +1,6 @@
 export {
-  addToList,
-  removeFromList,
-  checkFromList,
-  deleteCompleted,
+  handleAddToList,
+  handleToggleCheck,
+  handleDeleteTodo,
+  handleClearCompleted,
 } from "./reducer";

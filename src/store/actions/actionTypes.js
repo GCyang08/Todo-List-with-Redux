@@ -1,4 +1,4 @@
 export const ADD_TO_LIST = "ADD_TO_LIST";
-export const REMOVE_FROM_LIST = "REMOVE_FROM_LIST";
 export const CHECK_FROM_LIST = "CHECK_FROM_LIST";
 export const DELETE_FROM_LIST = "DELETE_FROM_LIST";
+export const CLEAR_COMPLETED = "CLEAR_COMPLETED";

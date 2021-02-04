@@ -1,57 +1,81 @@
-import React, { Component } from "react";
-import Lists from "./Lists/Lists";
+import React, { useState, useEffect } from "react";
+import List from "../Lists/Lists";
+import classes from "./FilterList.module.css";
 
-class FilterList extends Component {
-  state = {
-    filterMode: 1,
+function FilterList(props) {
+  const [filteredTodos, setFilteredTodos] = useState(props.todos);
+  const [activeFilter, setActiveFilter] = React.useState(() => "All");
+
+  const handleFilterChange = (filter) => {
+    setActiveFilter(filter.id);
   };
 
-  setFilter(mode) {
-    this.setState({ filterMode: mode });
-  }
+  useEffect(() => {
+    if (activeFilter === "All") {
+      setFilteredTodos(props.todos);
+    } else if (activeFilter === "Active") {
+      setFilteredTodos(props.todos.filter((t) => t.completed === false));
+    } else if (activeFilter === "Completed") {
+      setFilteredTodos(props.todos.filter((t) => t.completed === true));
+    }
+  }, [activeFilter, props.todos]);
 
-  render() {
-    const todoComps = this.props.lists
-      .filter((lists) => {
-        switch (this.state.filterMode) {
-          case 1:
-            return true;
-          case 2:
-            return !lists.isChecked;
-          case 3:
-            return lists.isChecked;
-        }
-      })
-      .map((list, id) => (
-        <Lists
-          key={id}
-          list={list.lists}
-          checkToDo={() => this.props.checkToDo(id)}
-          checked={list.isChecked}
-          clicked={() => this.props.clicked(id)}
-        />
-      ));
-    return (
-      <div>
-        {todoComps}
-        <button type="button" role="filter" onClick={() => this.setFilter(1)}>
-          All
-        </button>
-        <button type="button" role="filter" onClick={() => this.setFilter(2)}>
-          Active
-        </button>
-        <button type="button" role="filter" onClick={() => this.setFilter(3)}>
-          Completed
-        </button>
-        <button
-          className="btn btn-danger btn-xs"
-          onClick={this.props.deleteCompleted}
-        >
-          Delete Completed
-        </button>
+  return (
+    <section className={classes.ShadowBox}>
+      {filteredTodos.map((todo) => {
+        return (
+          <List
+            key={todo.id}
+            {...todo}
+            onHandleDeleteTodo={props.onHandleDeleteTodo}
+            onHandleToggleCheck={props.onHandleToggleCheck}
+          />
+        );
+      })}
+      <div className={classes.Filter}>
+        <div className={classes.ItemsLeft}>
+          {`${
+            props.todos.filter((t) => t.completed === false).length
+          } items left`}
+        </div>
+        <div className={classes.Wrapper}>
+          <span
+            id="All"
+            className={`${activeFilter === "All" ? classes.FilterButtons : ""}`}
+            onClick={(e) => handleFilterChange(e.target)}
+          >
+            All
+          </span>
+          <span
+            id="Active"
+            className={`${
+              activeFilter === "Active" ? classes.FilterButtons : ""
+            }`}
+            onClick={(e) => handleFilterChange(e.target)}
+          >
+            Active
+          </span>
+          <span
+            id="Completed"
+            className={`${
+              activeFilter === "Completed" ? classes.FilterButtons : ""
+            }`}
+            onClick={(e) => handleFilterChange(e.target)}
+          >
+            Completed
+          </span>
+        </div>
+        <div>
+          <span
+            className={classes.Wrapper}
+            onClick={() => props.onHandleClearCompleted()}
+          >
+            Clear completed
+          </span>
+        </div>
       </div>
-    );
-  }
+    </section>
+  );
 }
 
 export default FilterList;
