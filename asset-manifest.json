@@ -1,24 +1,28 @@
 {
   "files": {
-    "main.css": "/Todo_List_with_Redux/static/css/main.8bad326f.chunk.css",
-    "main.js": "/Todo_List_with_Redux/static/js/main.6fd9a1ec.chunk.js",
-    "main.js.map": "/Todo_List_with_Redux/static/js/main.6fd9a1ec.chunk.js.map",
-    "runtime-main.js": "/Todo_List_with_Redux/static/js/runtime-main.2a6225a8.js",
-    "runtime-main.js.map": "/Todo_List_with_Redux/static/js/runtime-main.2a6225a8.js.map",
-    "static/js/2.2769f51f.chunk.js": "/Todo_List_with_Redux/static/js/2.2769f51f.chunk.js",
-    "static/js/2.2769f51f.chunk.js.map": "/Todo_List_with_Redux/static/js/2.2769f51f.chunk.js.map",
-    "static/js/3.72e86cba.chunk.js": "/Todo_List_with_Redux/static/js/3.72e86cba.chunk.js",
-    "static/js/3.72e86cba.chunk.js.map": "/Todo_List_with_Redux/static/js/3.72e86cba.chunk.js.map",
+    "main.css": "/Todo_List_with_Redux/static/css/main.dc846ef6.chunk.css",
+    "main.js": "/Todo_List_with_Redux/static/js/main.a8aca6bc.chunk.js",
+    "main.js.map": "/Todo_List_with_Redux/static/js/main.a8aca6bc.chunk.js.map",
+    "runtime-main.js": "/Todo_List_with_Redux/static/js/runtime-main.9dbb67c9.js",
+    "runtime-main.js.map": "/Todo_List_with_Redux/static/js/runtime-main.9dbb67c9.js.map",
+    "static/js/2.bc78a8dc.chunk.js": "/Todo_List_with_Redux/static/js/2.bc78a8dc.chunk.js",
+    "static/js/2.bc78a8dc.chunk.js.map": "/Todo_List_with_Redux/static/js/2.bc78a8dc.chunk.js.map",
+    "static/js/3.4dc8bcca.chunk.js": "/Todo_List_with_Redux/static/js/3.4dc8bcca.chunk.js",
+    "static/js/3.4dc8bcca.chunk.js.map": "/Todo_List_with_Redux/static/js/3.4dc8bcca.chunk.js.map",
     "index.html": "/Todo_List_with_Redux/index.html",
-    "static/css/main.8bad326f.chunk.css.map": "/Todo_List_with_Redux/static/css/main.8bad326f.chunk.css.map",
-    "static/js/2.2769f51f.chunk.js.LICENSE.txt": "/Todo_List_with_Redux/static/js/2.2769f51f.chunk.js.LICENSE.txt",
+    "static/css/main.dc846ef6.chunk.css.map": "/Todo_List_with_Redux/static/css/main.dc846ef6.chunk.css.map",
+    "static/js/2.bc78a8dc.chunk.js.LICENSE.txt": "/Todo_List_with_Redux/static/js/2.bc78a8dc.chunk.js.LICENSE.txt",
+    "static/media/bg-desktop-dark.73e47dbb.jpg": "/Todo_List_with_Redux/static/media/bg-desktop-dark.73e47dbb.jpg",
+    "static/media/bg-desktop-light.3508d620.jpg": "/Todo_List_with_Redux/static/media/bg-desktop-light.3508d620.jpg",
     "static/media/icon-check.a8fb15d0.svg": "/Todo_List_with_Redux/static/media/icon-check.a8fb15d0.svg",
-    "static/media/icon-cross.6ee81d30.svg": "/Todo_List_with_Redux/static/media/icon-cross.6ee81d30.svg"
+    "static/media/icon-cross.6ee81d30.svg": "/Todo_List_with_Redux/static/media/icon-cross.6ee81d30.svg",
+    "static/media/icon-moon.6c03114b.svg": "/Todo_List_with_Redux/static/media/icon-moon.6c03114b.svg",
+    "static/media/icon-sun.910b1f9a.svg": "/Todo_List_with_Redux/static/media/icon-sun.910b1f9a.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.2a6225a8.js",
-    "static/js/2.2769f51f.chunk.js",
-    "static/css/main.8bad326f.chunk.css",
-    "static/js/main.6fd9a1ec.chunk.js"
+    "static/js/runtime-main.9dbb67c9.js",
+    "static/js/2.bc78a8dc.chunk.js",
+    "static/css/main.dc846ef6.chunk.css",
+    "static/js/main.a8aca6bc.chunk.js"
   ]
 }
