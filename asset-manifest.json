@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Todo_List_with_Redux/static/css/main.dc846ef6.chunk.css",
-    "main.js": "/Todo_List_with_Redux/static/js/main.a8aca6bc.chunk.js",
-    "main.js.map": "/Todo_List_with_Redux/static/js/main.a8aca6bc.chunk.js.map",
+    "main.css": "/Todo_List_with_Redux/static/css/main.bb0c2ce7.chunk.css",
+    "main.js": "/Todo_List_with_Redux/static/js/main.4c189375.chunk.js",
+    "main.js.map": "/Todo_List_with_Redux/static/js/main.4c189375.chunk.js.map",
     "runtime-main.js": "/Todo_List_with_Redux/static/js/runtime-main.9dbb67c9.js",
     "runtime-main.js.map": "/Todo_List_with_Redux/static/js/runtime-main.9dbb67c9.js.map",
-    "static/js/2.bc78a8dc.chunk.js": "/Todo_List_with_Redux/static/js/2.bc78a8dc.chunk.js",
-    "static/js/2.bc78a8dc.chunk.js.map": "/Todo_List_with_Redux/static/js/2.bc78a8dc.chunk.js.map",
+    "static/js/2.a99fb535.chunk.js": "/Todo_List_with_Redux/static/js/2.a99fb535.chunk.js",
+    "static/js/2.a99fb535.chunk.js.map": "/Todo_List_with_Redux/static/js/2.a99fb535.chunk.js.map",
     "static/js/3.4dc8bcca.chunk.js": "/Todo_List_with_Redux/static/js/3.4dc8bcca.chunk.js",
     "static/js/3.4dc8bcca.chunk.js.map": "/Todo_List_with_Redux/static/js/3.4dc8bcca.chunk.js.map",
     "index.html": "/Todo_List_with_Redux/index.html",
-    "static/css/main.dc846ef6.chunk.css.map": "/Todo_List_with_Redux/static/css/main.dc846ef6.chunk.css.map",
-    "static/js/2.bc78a8dc.chunk.js.LICENSE.txt": "/Todo_List_with_Redux/static/js/2.bc78a8dc.chunk.js.LICENSE.txt",
+    "static/css/main.bb0c2ce7.chunk.css.map": "/Todo_List_with_Redux/static/css/main.bb0c2ce7.chunk.css.map",
+    "static/js/2.a99fb535.chunk.js.LICENSE.txt": "/Todo_List_with_Redux/static/js/2.a99fb535.chunk.js.LICENSE.txt",
     "static/media/bg-desktop-dark.73e47dbb.jpg": "/Todo_List_with_Redux/static/media/bg-desktop-dark.73e47dbb.jpg",
     "static/media/bg-desktop-light.3508d620.jpg": "/Todo_List_with_Redux/static/media/bg-desktop-light.3508d620.jpg",
     "static/media/icon-check.a8fb15d0.svg": "/Todo_List_with_Redux/static/media/icon-check.a8fb15d0.svg",
@@ -21,8 +21,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.9dbb67c9.js",
-    "static/js/2.bc78a8dc.chunk.js",
-    "static/css/main.dc846ef6.chunk.css",
-    "static/js/main.a8aca6bc.chunk.js"
+    "static/js/2.a99fb535.chunk.js",
+    "static/css/main.bb0c2ce7.chunk.css",
+    "static/js/main.4c189375.chunk.js"
   ]
 }
