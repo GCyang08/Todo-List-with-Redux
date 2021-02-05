@@ -1,6 +1,6 @@
 # Todo_List_with_Redux
 
-To view my code, PLEASE download the ZIP file from the master branch.
+If you would like to view my code, you may download the zip file from the master branch.
 
 
 I got this to-do list challenge from Front End Mentor. 
