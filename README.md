@@ -1,6 +1,15 @@
 # Project Name: To-do List
 ## Overview: This project is a challenge from Frontend Mentor. For this project the users should be able to:
           . View the optimal layout for the app depending on their device's screen size
+          . See hover states for all interactive elements on the page
+          . Add new todos to the list
+          . Mark todos as complete
+          . Delete todos from the list
+          . Filter by all/active/complete todos
+          . Clear all completed todos
+          . Toggle light and dark mode
+          
+## What I did - I coded this project using one of JavaScript's framework called React. To layout this project, I used flexbox for my design. I also included redux to store my state and dispatch some actions in order for users to have the best experience with this application.
 
 ## Available Scripts
 
