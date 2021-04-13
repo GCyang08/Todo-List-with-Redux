@@ -9,7 +9,8 @@
           . Clear all completed todos
           . Toggle light and dark mode
           
-## What I did - I coded this project using one of JavaScript's framework called React. To layout this project, I used flexbox for my design. I also included redux to store my state and dispatch some actions in order for users to have the best experience with this application.
+## What I did - 
+          I coded this project using one of JavaScript's framework called React. To layout this project, I used flexbox for my design. I also included redux to store my state and dispatch some actions in order for users to have the best experience with this application.
 
 ## Available Scripts
 
