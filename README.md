@@ -10,7 +10,7 @@
           . Toggle light and dark mode
           
 ## What I did - 
-This project was created using React, a JavaScript framework. For the layout of this project, I used CSS and flexbox. I have used React Redux to store my state and dispatch some behavior so that users can interact with the app following along with the usage of React Hooks.
+This project was created using React, a JavaScript framework. Everyting about this project was coded from scratch. For the layout of this project, I used CSS and flexbox. I have used React Redux to store my state and dispatch some behavior so that users can interact with the app. I also used React Hooks to implement my application as well.
 
 ## Available Scripts
 
