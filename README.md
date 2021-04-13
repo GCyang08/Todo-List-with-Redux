@@ -1,4 +1,8 @@
 # Project Name: To-do List
+
+## What I did - 
+React, a JavaScript application, was used to develop this project. All about this project was built from the ground up. I used CSS and flexbox to build the layout for this project. To allow users to interact with the app, I used React Redux to store my state and dispatch some actions. React Hooks were also used to execute my program.
+
 ## Overview: This project is a challenge from Frontend Mentor. For this project the users should be able to:
           . View the optimal layout for the app depending on their device's screen size
           . See hover states for all interactive elements on the page
@@ -8,9 +12,6 @@
           . Filter by all/active/complete todos
           . Clear all completed todos
           . Toggle light and dark mode
-          
-## What I did - 
-React, a JavaScript application, was used to develop this project. All about this project was built from the ground up. I used CSS and flexbox to build the layout for this project. To allow users to interact with the app, I used React Redux to store my state and dispatch some actions. React Hooks were also used to execute my program.
 
 ## Available Scripts
 
