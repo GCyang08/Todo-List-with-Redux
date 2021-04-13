@@ -11,7 +11,8 @@
 ## How I created this project  - 
 React, a JavaScript application, was used to develop this project. All about this project was built from the ground up. I used CSS and flexbox to build the layout for this project. To allow users to interact with the app, I used React Redux to store my state and dispatch some actions. React Hooks were also used to execute my program. For my theme switcher, I installed and import styled componets so that user can enable themselves to switch from a light theme or a dark theme depending on their preference.
 
-## Overview - This challenge is from Frontend Mentor. For this project the users should be able to:
+## Overview - 
+This challenge is from Frontend Mentor. For this project the users should be able to:
           . View the optimal layout for the app depending on their device's screen size
           . See hover states for all interactive elements on the page
           . Add new todos to the list
