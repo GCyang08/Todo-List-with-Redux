@@ -1,4 +1,4 @@
-## To-do List
+## Project Name: To-do List
 
 ## Available Scripts
 
