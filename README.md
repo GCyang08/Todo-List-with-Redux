@@ -1,5 +1,6 @@
-## Project Name: To-do List
-# Overview:
+# Project Name: To-do List
+## Overview: This project is a challenge from Frontend Mentor. For this project the users should be able to:
+          . View the optimal layout for the app depending on their device's screen size
 
 ## Available Scripts
 
